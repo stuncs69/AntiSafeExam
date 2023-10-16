@@ -10,6 +10,10 @@ html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#main {
+    color: yellow;
+}
+
 body {
     padding: 5rem;
 }
@@ -17,6 +21,7 @@ body {
 /* classes */
 .superbig {
     font-size: 5rem;
+    color: var(--main-col) !important;
 }
 
 .alert {
