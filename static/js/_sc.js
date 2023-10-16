@@ -10,9 +10,12 @@ document.querySelectorAll("li").forEach(listItem => {
     ].forEach(_class => listItem.classList.add(_class));
 });
 
-window.onresize = () => {
+function getCalculatedStyling() {
     const listsChild = document.getElementById('lists-child');
     
     window.innerWidth < 1247 ? (listsChild.style.flexWrap = "nowrap")
     : listsChild.style.flexWrap = "wrap";
 }
+
+window.onresize = () => getCalculatedStyling();
+window.onload = () => getCalculatedStyling();
