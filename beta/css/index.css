@@ -1,0 +1,47 @@
+:root {
+    --main-col: yellow;
+    --second-col: rgba(255, 255, 0, 0.8);
+    --back-col: #242424;
+}
+
+html, body {
+    background-color: var(--back-col);
+    color: var(--main-col);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    padding: 5rem;
+}
+
+/* classes */
+.superbig {
+    font-size: 5rem;
+}
+
+.alert {
+    background-color: var(--second-col);
+    width: fit-content;
+    color: var(--back-col);
+    padding: 1rem;
+    border: 0.2rem solid var(--main-col);
+    border-radius: 0.2rem;
+}
+
+.alert > hr {
+    border: 0.1rem solid var(--main-col);
+}
+
+.dual {
+    display: flex;
+    flex-direction: row;
+}
+
+.dual > * {
+    width: 50%;
+    height: 100%;
+}
+
+.dual:last-child > .alert {
+    width: max-content;
+}
