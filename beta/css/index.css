@@ -8,6 +8,7 @@ html, body {
     background-color: var(--back-col);
     color: var(--main-col);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
 }
 
 #main {
@@ -33,6 +34,25 @@ body {
     border-radius: 0.2rem;
 }
 
+table {
+    color: var(--back-col);
+}
+
+tr {
+    padding: 0.1rem;
+}
+
+th {
+    background-color: var(--main-col);
+    padding: 0.5rem;
+    width: 10rem;
+}
+
+td {
+    background-color: var(--second-col);
+    padding: 0.5rem;
+}
+
 .alert > hr {
     border: 0.1rem solid var(--main-col);
 }
@@ -40,6 +60,7 @@ body {
 .dual {
     display: flex;
     flex-direction: row;
+    height: 100vh;
 }
 
 .dual > * {
@@ -49,4 +70,8 @@ body {
 
 .dual:last-child > .alert {
     width: max-content;
+}
+
+.h75p {
+    height: 55% !important;
 }
