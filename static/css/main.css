@@ -11,14 +11,23 @@ li {
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
+    margin: 0.25rem 0;
+
 }
 
+li>a {
+    margin-left: auto;
+}
+/* 
 li::before {
     content: "*";
-}
+} */
 
 .btn {
     padding: 2px 1.2rem !important;
 }
 
-#ItemCard { width: 75%; }
+#ItemCard { width: 75%; height: 100%; }
+#lists-wrapper, #lists-child 
+    { display: flex; flex-direction: column; flex-wrap: wrap;
+      gap: 0.25rem; }
